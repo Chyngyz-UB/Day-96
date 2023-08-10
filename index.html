@@ -1,0 +1,19 @@
+<!-- index.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to Our Store</h1>
+<ul>
+    {% for product in products %}
+        <li>
+            {{ product.name }} - ${{ product.price }}
+            <form method="post" action="{{ url_for('cart') }}">
+                <input type="hidden" name="product" value="{{ product.id }}">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('cart') }}">View Cart</a>
+{% endblock %}

@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Reset some default styling */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styles for product list */
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Cart and checkout links */
+a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Checkout page styles */
+#paypal-button-container {
+    margin-top: 20px;
+}
+
+/* Basic styles for messages */
+.flash {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Error message styles */
+.flash.error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Success message styles */
+.flash.success {
+    background-color: #4caf50;
+    color: #fff;
+}

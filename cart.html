@@ -1,0 +1,13 @@
+<!-- cart.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Your Cart</h1>
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }} - ${{ product.price }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('checkout') }}">Proceed to Checkout</a>
+{% endblock %}
